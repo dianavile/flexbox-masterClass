@@ -1,0 +1,104 @@
+        /*colores utilizados
+#2d4059;
+#ea5455;
+*/
+        
+        * {
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        .padre {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header,
+        .section,
+        .footer {
+            background-color: black;
+        }
+        
+        .menu {
+            background-color: #2d4059;
+            display: flex;
+        }
+        
+        .logo,
+        .nav,
+        .social {
+            background-color: #ea5455;
+        }
+        
+        .nav {
+            flex: 5 1 auto;
+            /* flex-grow: 5;*/
+        }
+        
+        .logo {
+            flex: 1 1 auto;
+        }
+        
+        .social {
+            flex: 1 1 auto;
+            /* flex-grow: 1;*/
+        }
+        
+        .texto-principal {
+            background-color: #f07b3f;
+        }
+        
+        h1 {
+            background-color: #ffd460;
+        }
+        
+        .articulos {
+            background-color: #4e4e6a;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .article {
+            background-color: #1f6cb0;
+            flex: 1 1 40%;
+        }
+        
+        .navegacion {
+            background-color: #70a3c4;
+            flex-basis: 100%;
+        }
+        
+        .aside {
+            background-color: #f73f52;
+        }
+        
+        .publicidad {
+            background-color: #ffea85;
+        }
+        
+        .section {
+            display: flex;
+        }
+        
+        .articulos {
+            flex: 2 1 auto;
+            /*flex-grow: 2 1 auto;*/
+        }
+        
+        .aside {
+            flex: 1 1 auto;
+            /*flex-grow: 1 1 auto;*/
+        }
+        
+        .pie {
+            background-color: #e6af2e;
+        }
+        /* media query */
+        
+        @media all and (max-width: 800px) {
+            .section {
+                flex-direction: column;
+                background-color: yellow;
+            }
+        }
